@@ -13,7 +13,7 @@ import { MatToolbarModule,
   MatCardModule,
   MatBadgeModule,
   MatDividerModule,
-  MatChipsModule } from '@angular/material';
+  MatGridListModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -50,7 +50,7 @@ const routes: Routes = [
     MatCardModule, 
     MatBadgeModule,
     MatDividerModule,
-    MatChipsModule,
+    MatGridListModule,
     FlexLayoutModule,
     ReactiveFormsModule
     ],
