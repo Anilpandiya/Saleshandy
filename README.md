@@ -6,7 +6,7 @@ This project was generated with :
    Angular: 6.1.10
    Material: 7.3.1
 
-I have deployed this project on - [Run Live](http://stale-stomach.surge.sh/){:target="_blank"}
+I have deployed this project on - [Run Live](http://stale-stomach.surge.sh/) {:target="_blank"}
 # To run on local follow below steps :
 
   1. Open the project folder and run the below command to install all the dependecies for this project :
