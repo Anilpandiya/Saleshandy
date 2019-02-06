@@ -8,18 +8,3 @@ img{
     height: 270px;
     width: 270px;
   }
-  
-  .half{
-    padding-top: 10px;
-    width:50%;
-    padding-bottom: 20px;
-  }
-  .half.right{
-   float: right;
-   padding-left: 150px;
-   padding-top: 10px;
-  }
-  .half.left{
-    float: left;
-    padding-left: 100px;
-  }
