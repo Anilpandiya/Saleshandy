@@ -1,30 +1,35 @@
 <div>
   <br>
   <mat-card>
-    <section>
+    <section fxLayoutAlign="center center">
       <h2>Welcome to Hogwarts School</h2>
     </section>
     <mat-divider></mat-divider>
     <br><br>
-    <form [formGroup]="createForm" class="create-form">
-      <mat-form-field class="field-full-width" appearance="outline">
-        <mat-label>User Name</mat-label>
-        <input matInput placeholder="User Name" formControlName="uname" #uname>
-      </mat-form-field>
-      <br>  
-      <mat-form-field appearance="outline">
-          <mat-label>Select your house</mat-label>
-          <mat-select placeholder="Select your House" formControlName="house" #house>
-            <mat-option value="Gryffindor">Gryffindor</mat-option>
-            <mat-option value="Ravenclaw">Ravenclaw</mat-option>
-            <mat-option value="Slytherin">Slytherin</mat-option>
-            <mat-option value="Hufflepuff">Hufflepuff</mat-option>
-          </mat-select>
-      </mat-form-field>
-      <br><br>
-      <mat-divider></mat-divider>
-      <br><br>
-      <button type="submit" (click)="join(uname.value, house.value)" [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Join</button>
-    </form>
+    <mat-card-content fxLayoutAlign="center center">
+      <form [formGroup]="createForm" class="create-form">
+        <mat-form-field class="field-full-width" appearance="outline">
+          <mat-label>User Name</mat-label>
+          <input matInput placeholder="User Name" formControlName="uname" #uname>
+        </mat-form-field>
+        <br>  
+        <mat-form-field appearance="outline">
+            <mat-label>Select your house</mat-label>
+              <mat-select placeholder="Select your House" formControlName="house" #house>
+                <mat-option value="Gryffindor">Gryffindor</mat-option>
+                <mat-option value="Ravenclaw">Ravenclaw</mat-option>
+                <mat-option value="Slytherin">Slytherin</mat-option>
+                <mat-option value="Hufflepuff">Hufflepuff</mat-option>
+              </mat-select>
+        </mat-form-field>
+          <br><br>
+          <mat-divider></mat-divider>
+          <br><br>
+        <mat-card-footer fxLayoutAlign="center center"> 
+          <button type="submit" (click)="join(uname.value, house.value)" [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Join</button>
+        </mat-card-footer>
+          <br><br>
+      </form>
+  </mat-card-content>
   </mat-card>
 </div>
