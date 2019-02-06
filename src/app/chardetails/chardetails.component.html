@@ -1,14 +1,14 @@
 <div>
   <mat-card>
-    <section class=".mat-title" fxLayout="row" fxLayoutGap="30%">
-        <h2>Hogwarts School of Witchcraft and Wizardry : {{charDetails.name}}</h2>
+    <section class=".mat-title" fxLayout="row" fxLayoutAlign="center center">
+        <h2>Hogwarts School of Witchcraft and Wizardry : {{charDetails.name}}</h2> &nbsp;&nbsp;
         <button  mat-button color="accent" routerLink="/house"><mat-icon>arrow_back</mat-icon></button>
     </section>
     <mat-divider></mat-divider>
     <br><br>
 
-    <div fxLayout="row">
-      <div class="half left .mat-typography">
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile>
         <ul>
           <li><h3>Species : {{charDetails.species | uppercase}}</h3></li> 
           <li><h3>Gender : {{charDetails.gender | uppercase}}</h3></li>
@@ -17,11 +17,10 @@
           <li><h3>Ancestry : {{charDetails.ancestry | uppercase}}</h3></li>
           <li><h3>House : {{charDetails.house | uppercase}}</h3></li>
         </ul>
-      </div>
-
-      <div class="half right">
-            <img class="img-responsive" src="{{charDetails.image}}">
-      </div> 
-    </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <img class="img-responsive" src="{{charDetails.image}}">
+      </mat-grid-tile>
+    </mat-grid-list>
   </mat-card>    
 </div>
