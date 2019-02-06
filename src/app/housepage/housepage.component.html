@@ -1,7 +1,7 @@
 <div *ngIf="!isEmptyObject(userData); else notFound">
     <mat-card class="main">
-        <section class=".mat-title" fxLayout="row" fxLayoutGap="50%">
-            <h2>{{userData.username | uppercase}}'s &nbsp; {{userData.housename | uppercase}} &nbsp; HOUSE</h2>
+        <section class=".mat-title" fxLayout="row" fxLayoutAlign="center center">
+            <h2>{{userData.username | uppercase}}'s &nbsp; {{userData.housename | uppercase}} &nbsp; HOUSE</h2> &nbsp;&nbsp;
             <button  mat-button color="accent" routerLink="/home"><mat-icon>logout</mat-icon></button>
             
         </section>
